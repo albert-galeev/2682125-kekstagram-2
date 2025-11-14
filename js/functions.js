@@ -12,7 +12,7 @@ const isPalindrome = (string) => {
   const normalizedString = string.replaceAll(' ', '').toLowerCase();
 
   // Create a variable for the reversed string
-  let reversedString;
+  let reversedString = '';
 
   // Reverse the string
   for (let i = normalizedString.length - 1; i >= 0; i--) {
