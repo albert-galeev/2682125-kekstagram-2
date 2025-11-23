@@ -80,6 +80,4 @@ const createPhoto = (index) => ({
   comments: Array.from({length: getRandomInteger(0, 30)}, createComment),
 });
 
-const photos = Array.from({length: PHOTOS_COUNT}, (_, index) => createPhoto(index + 1));
-
-console.log(photos);
+Array.from({length: PHOTOS_COUNT}, (_, index) => createPhoto(index + 1));
