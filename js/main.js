@@ -1,3 +1,5 @@
+import { renderThumbnails } from './render-thumbnails.js';
+
 const NAMES = [
   'Иван',
   'Хуан Себастьян',
@@ -80,4 +82,6 @@ const createPhoto = (index) => ({
   comments: Array.from({length: getRandomInteger(0, 30)}, createComment),
 });
 
-Array.from({length: PHOTOS_COUNT}, (_, index) => createPhoto(index + 1));
+const photos = Array.from({length: PHOTOS_COUNT}, (_, index) => createPhoto(index + 1));
+
+renderThumbnails(photos);
